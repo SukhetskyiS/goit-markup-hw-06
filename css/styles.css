@@ -584,12 +584,6 @@ a {
   color: var(--accent-color);
 }
 
-.mail,
-.tel {
-  display: inline-block;
-  margin-top: 9px;
-}
-
 .join {
   margin-left: 70px;
   margin-top: 12px;
@@ -633,8 +627,19 @@ a {
   color: var(--white-text-color);
 }
 
-.footer-email::placeholder {
+.footer-email {
   padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-email::placeholder {
   font-size: 16px;
   line-height: 1.25;
   display: flex;
@@ -926,7 +931,20 @@ a {
   /* outline: 1px solid blue; */
   display: flex;
   flex-direction: column;
+}
+
+.form-field.name,
+.form-field.tel,
+.form-field.email {
   margin-bottom: 10px;
+}
+
+.form-field.comment {
+  margin-bottom: 20px;
+}
+
+.checkbox-block {
+  margin-bottom: 30px;
 }
 
 .modal-input {
@@ -996,7 +1014,6 @@ textarea::placeholder {
 
 textarea {
   resize: none;
-  margin-bottom: 20px;
 }
 
 .agreement {
@@ -1072,9 +1089,7 @@ textarea {
   min-width: 200px;
   height: 50px;
   padding: 10px 52px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 
   font-weight: 700;
   font-size: 16px;
