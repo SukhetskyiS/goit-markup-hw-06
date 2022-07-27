@@ -1091,6 +1091,3 @@ textarea {
   border-radius: 4px;
   border-color: transparent;
 }
-
-.form-field.name input::placeholder {
-}
